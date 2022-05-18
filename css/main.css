@@ -1,0 +1,290 @@
+@charset 'UTF-8';
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
+@font-face {
+    font-family: 'titulos';
+    src: url(../fonts/FuturaLT-Book.ttf) format("truetype");
+}
+
+
+:root {
+    --color00: #595856;
+    --color01: #F3F0EC;
+    --color02: #D9D5D0;
+    --color03: #5E5D5B;
+    --color04: #A6A39F;
+    --color05: #737373;
+    --color06: #595959;
+    --color07: #404040;
+    --color08: #0D0D0D;
+    --color09: #e7e7e7;
+    --color-logo1: #CCCCCC;
+    --color-logo2: #605E5E;
+    --color-menu-hover: 160, 180, 210;
+    --letra-padrao: 'Share Tech Mono', monospace;
+}
+
+* {
+    color: black;
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: var(--color09);
+    margin: 0px;
+}
+
+div.background {
+    background: black url(../img/background.jpg) no-repeat fixed;
+    background-size: cover;
+}
+
+header {
+    width: 100%;
+    margin: auto;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header > div.logo {
+    margin: 0px;
+    padding: 0px;
+    margin-right: 10%;
+}
+
+header > div.logo > h1 {
+    margin: 0px;
+    font-family: 'open sans', sans-serif;
+    font-weight: bold;
+    font-size: 3.75em;
+    text-align: center;
+    line-height: 0.85em;
+}
+
+header > div.logo > h1 > span.logo-1 {
+    color: var(--color-logo1);
+}
+
+header >  div.logo > h1 > span.logo-2 {
+    color: var(--color-logo2);
+}
+
+header > div.logo > p.logo-3 {
+    color: white;
+    font-family: open sans,sans-serif;
+    font-size: 0.8em;
+    text-align: center;
+    letter-spacing: 5px;
+    line-height: 3.5em;
+    text-transform: uppercase;
+}
+
+nav {
+    display: flex;
+    margin-top: -5%;
+    justify-content: center; 
+    align-items: center;
+}
+
+nav li {
+    display: inline-block;
+}
+
+nav li > a {
+    margin: 0px;
+    padding: 20px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    text-decoration: none;
+}
+
+nav li > a:hover {
+    color: rgb(var(--color-menu-hover));
+}
+
+nav li > a:checked {
+    color: rgb(var(--color-menu-hover))
+}
+
+section {
+    padding-top: 15vh;
+    padding-bottom: 15vh;
+}
+
+section#Home >  aside  > div.redes-sociais {
+    display: flex;
+}
+
+section#Home >  aside  > div.redes-sociais > div#parte-1 {
+    display: block;
+    margin: auto;
+}
+
+section#Home >  aside  > div.redes-sociais > div#parte-1 > h2 {
+    font-family: Futura,Trebuchet MS,Arial,sans-serif;
+    font-size: 2.5em;
+    font-weight: normal; 
+    color: white;
+    display: block;
+    margin: auto;
+    margin-top: -30%;
+    margin-bottom: 30px;
+    max-width: 500px;
+}
+
+section#Home >  aside > div.redes-sociais > div#parte-1 > button{
+    background-color: transparent;
+    background-image: url(../img/instagram.png);
+    background-position: 10%;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    color: white;
+    border: none;
+    width: 300px;
+    height: 50px;
+    display: block;
+    margin: auto;
+    font-size: 1em;
+}
+
+section#Home >  aside > div.redes-sociais > div#parte-1 > button:hover {
+    border: 2px solid white;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+section#Home >  aside  > div.redes-sociais > div#parte-2 {
+    display: flex;
+    margin: auto;
+}
+
+section#Home > aside > div.redes-sociais > div#parte-2 > picture#teste > img#tablet{
+    position: relative;
+    left: 25%;
+}
+
+section#Home > aside > div.redes-sociais > div#parte-2 > picture > img#celular {
+    position: relative;
+    left: -180%;
+    bottom: -60%;
+}
+
+section#Solucoes > article > h2#comeco {
+    font-family: titulos, sans-serif;
+    font-size: 2.2em;
+    font-weight: normal;
+    color: #0d0d0ddc;
+    text-align: center;
+    margin-top: 4%;
+}
+
+section#Solucoes > article > p#atribuicao {
+    font-family: georgia,palatino,book antiqua,palatino linotype,serif;
+    font-size: 1.2em;
+    font-weight: normal;
+    color: #0d0d0daf;
+    text-align: center;
+    width: 250px;
+    margin: auto;
+    margin-top: 15px;
+    margin-bottom: 40px;
+}
+
+section#Solucoes > article > p {
+    margin: auto;
+    margin-bottom: 30px;
+    font-family: futura-lt-w01-light,futura-lt-w05-light,sans-serif;
+    font-size: 1.3em;
+    max-width: 65%;
+    text-align: justify;
+    text-indent: 50px;
+}
+
+section#Solucoes > aside {
+    background-color: #a6a39f2a;
+    height: 300px;
+}
+
+section#Solucoes > aside > h2 {
+    font-family: titulos, sans-serif;
+    font-size: 2em;
+    font-weight: normal;
+    text-align: center;
+    margin-bottom: 70px;
+}
+
+section#Solucoes > aside > div#trofeus {
+    display: flex;
+    margin: auto;
+}
+
+section#Solucoes > aside > div#trofeus > div#lamp {
+    display: block;
+    max-width: 300px;
+    margin: auto;
+    margin-right: 20px;
+    text-align: center;
+}
+
+section#Solucoes > aside > div#trofeus > div#account {
+    display: block;
+    max-width: 300px;
+    margin: auto;
+    margin-left: 20px;
+    margin-right: 20px;
+    text-align: center;
+}
+
+section#Solucoes > aside > div#trofeus > div#block {
+    display: block;
+    max-width: 300px;
+    margin: auto;
+    margin-left: 20px;
+    text-align: center;
+}
+
+footer {
+    background-color: var(--color08);
+    width: 100%;
+    height: 40vh;
+    padding-top: 30px;
+    padding-left: 60px;
+    color: white;
+
+}
+
+footer > div.logo {
+    margin: 0px;
+    padding: 0px;
+    max-width: 200px;
+}
+
+footer > div.logo > h1 {
+    margin: 0px;
+    font-family: 'open sans', sans-serif;
+    font-weight: bold;
+    font-size: 3.75em;
+    text-align: center;
+    line-height: 0.85em;
+}
+
+footer > div.logo > h1 > span.logo-1 {
+    color: var(--color-logo1);
+}
+
+footer >  div.logo > h1 > span.logo-2 {
+    color: var(--color-logo2);
+}
+
+footer > div.logo > p.logo-3 {
+    color: white;
+    font-family: open sans,sans-serif;
+    font-size: 0.8em;
+    text-align: center;
+    letter-spacing: 5px;
+    line-height: 3.5em;
+    text-transform: uppercase;
+}
