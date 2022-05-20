@@ -253,6 +253,7 @@ section#Solucoes > aside > div#trofeus > div#block {
 section#ComoFunciona > article > div.informacoessite {
     display: flex;
     margin: auto;
+    width: 100%;
     align-items: center;
     justify-content: center;
 }
@@ -270,6 +271,11 @@ section#ComoFunciona > article > div.informacoessite > div.img-mobile > picture 
 section#ComoFunciona > article > div.informacoessite > div.img-mobile > picture > img#mobile2 {
     position: relative;
     left: 40%;
+}
+
+section#ComoFunciona > article > div.informacoessite > div.informacoes {
+    display: block;
+    width: 50%;
 }
 
 footer {
