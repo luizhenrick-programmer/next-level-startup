@@ -162,7 +162,7 @@ section#Home >  aside  > div.redes-sociais > div#parte-2 {
     margin: auto;
 }
 
-section#Home > aside > div.redes-sociais > div#parte-2 > picture#teste > img#tablet{
+section#Home > aside > div.redes-sociais > div#parte-2 > picture > img#tablet{
     position: relative;
     left: 25%;
 }
@@ -253,6 +253,23 @@ section#Solucoes > aside > div#trofeus > div#block {
 section#ComoFunciona > article > div.informacoessite {
     display: flex;
     margin: auto;
+    align-items: center;
+    justify-content: center;
+}
+
+section#ComoFunciona > article > div.informacoessite > div.img-mobile {
+    display: flex;
+    width: 50%;
+}
+
+section#ComoFunciona > article > div.informacoessite > div.img-mobile > picture > img#mobile1 {
+    position: relative;
+    left: 60%;
+}
+
+section#ComoFunciona > article > div.informacoessite > div.img-mobile > picture > img#mobile2 {
+    position: relative;
+    left: 40%;
 }
 
 footer {
