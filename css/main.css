@@ -263,14 +263,9 @@ section#ComoFunciona > article > div.informacoessite > div.img-mobile {
     width: 50%;
 }
 
-section#ComoFunciona > article > div.informacoessite > div.img-mobile > picture > img#mobile1 {
+section#ComoFunciona > article > div.informacoessite > div.img-mobile > img#mobile {
     position: relative;
     left: 60%;
-}
-
-section#ComoFunciona > article > div.informacoessite > div.img-mobile > picture > img#mobile2 {
-    position: relative;
-    left: 40%;
 }
 
 section#ComoFunciona > article > div.informacoessite > div.informacoes {
