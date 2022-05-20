@@ -205,7 +205,9 @@ section#Solucoes > article > p {
 
 section#Solucoes > aside {
     background-color: #a6a39f2a;
-    height: 300px;
+    margin: auto;
+    margin-top: 10vh;
+    height: 350px;
 }
 
 section#Solucoes > aside > h2 {
