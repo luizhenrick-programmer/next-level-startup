@@ -250,6 +250,11 @@ section#Solucoes > aside > div#trofeus > div#block {
     text-align: center;
 }
 
+section#ComoFunciona > article > div.informacoessite {
+    display: flex;
+    margin: auto;
+}
+
 footer {
     background-color: var(--color08);
     width: 100%;
