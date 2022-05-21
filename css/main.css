@@ -1,10 +1,30 @@
 @charset 'UTF-8';
 @import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
+
+@font-face {
+    font-family: 'Subtitulo';
+    src: url(../fonts/Ailerons-Typeface.otf) format("opentype");
+}
+
 @font-face {
     font-family: 'titulos';
     src: url(../fonts/FuturaLT-Book.ttf) format("truetype");
 }
 
+@font-face {
+    font-family: 'hamster';
+    src: url(../fonts/Hamster.otf) format("opentype");
+}
+
+@font-face {
+    font-family: 'oranienbaum';
+    src: url(../fonts/Oranienbaum.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: 'streamster';
+    src: url(../fonts/Streamster.ttf) format("truetype");
+}
 
 :root {
     --color00: #595856;
@@ -260,17 +280,37 @@ section#ComoFunciona > article > div.informacoessite {
 
 section#ComoFunciona > article > div.informacoessite > div.img-mobile {
     display: flex;
+    margin: auto;
     width: 50%;
 }
 
 section#ComoFunciona > article > div.informacoessite > div.img-mobile > img#mobile {
     position: relative;
-    left: 60%;
+    left: 10%;
 }
 
 section#ComoFunciona > article > div.informacoessite > div.informacoes {
     display: block;
+    margin: auto;
     width: 50%;
+    line-height: 2em;
+}
+
+section#ComoFunciona > article > div.informacoessite > div.informacoes > h2 {
+    margin-bottom: 25px;
+    max-width: 600px;
+    font-family: 'Subtitulo';
+    letter-spacing: normal;
+    font-size: 2.5em;
+}
+
+section#ComoFunciona > article > div.informacoessite > div.informacoes > p {
+    max-width: 600px;
+    font-family: futura-lt-w01-light,futura-lt-w05-light,sans-serif;
+    letter-spacing: normal;
+    text-align: justify;
+    text-indent: 30px;
+    font-size: 1.1em;
 }
 
 footer {
