@@ -232,6 +232,8 @@ section#Solucoes > aside {
 }
 
 section#Solucoes > aside > h2 {
+    margin: auto;
+    max-width: 70%;
     font-family: titulos, sans-serif;
     font-size: 2em;
     font-weight: normal;
@@ -243,30 +245,34 @@ section#Solucoes > aside > h2 {
 section#Solucoes > aside > div#trofeus {
     display: flex;
     margin: auto;
+    max-width: 100%;
+    height: 100%;
 }
 
 section#Solucoes > aside > div#trofeus > div#lamp {
     display: block;
-    max-width: 300px;
     margin: auto;
+    margin-left: 20px;
     margin-right: 20px;
+    max-width: 33.3%;
     text-align: center;
 }
 
 section#Solucoes > aside > div#trofeus > div#account {
     display: block;
-    max-width: 300px;
     margin: auto;
     margin-left: 20px;
     margin-right: 20px;
+    max-width: 33.3%;
     text-align: center;
 }
 
 section#Solucoes > aside > div#trofeus > div#block {
     display: block;
-    max-width: 300px;
     margin: auto;
     margin-left: 20px;
+    margin-right: 20px;
+    max-width: 33.3%;
     text-align: center;
 }
 
@@ -298,10 +304,12 @@ section#ComoFunciona > article > div.informacoessite > div.informacoes {
 
 section#ComoFunciona > article > div.informacoessite > div.informacoes > h2 {
     margin-bottom: 25px;
-    max-width: 600px;
-    font-family: 'Subtitulo';
+    margin-left: -7%;
+    max-width: 80%;
+    font-family: subtitulo, sans-serif;
     letter-spacing: normal;
     font-size: 2.5em;
+    text-align: center;
 }
 
 section#ComoFunciona > article > div.informacoessite > div.informacoes > p {
@@ -311,6 +319,41 @@ section#ComoFunciona > article > div.informacoessite > div.informacoes > p {
     text-align: justify;
     text-indent: 30px;
     font-size: 1.1em;
+}
+
+section#SobreNos {
+    background-color: rgb(207,223,242);
+    margin: auto;
+    padding: 7%;
+}
+
+section#SobreNos > h2 {
+    margin: auto;
+    margin-bottom: 15px;
+    font-family: titulos, sans-serif;
+    font-weight: normal;
+    font-size: 2em;
+    text-align: center;
+}
+
+section#SobreNos > p#slogan {
+    margin: auto;
+    margin-bottom: 50px;
+    font-family: palatino, book antiqua, palatino linotype, serif;
+    font-size: 1.2em;
+    color: #0d0d0de7;
+    text-align: center;
+}
+
+section#SobreNos > p {
+    margin: auto;
+    margin-bottom: 10px;
+    max-width: 80%;
+    font-family: futura-lt-w01-light,futura-lt-w05-light,sans-serif;
+    font-size: 1.2em;
+    color: #0d0d0de7;
+    text-align: justify;
+    text-indent: 50px;
 }
 
 footer {
