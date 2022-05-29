@@ -234,7 +234,7 @@ section#Solucoes > aside {
     background-color: #a6a39f2a;
     margin: auto;
     margin-top: 10vh;
-    height: 350px;
+    min-height: 350px;
 }
 
 section#Solucoes > aside > h2 {
@@ -257,33 +257,87 @@ section#Solucoes > aside > div#trofeus {
 section#Solucoes > aside > div#trofeus > div#lamp {
     display: block;
     margin: auto;
+    margin-left: 15px;
+    margin-right: 15px;
+    width: 33.3%;
     justify-content: center;
     align-items: center;
 }
 
 section#Solucoes > aside > div#trofeus > div#lamp > div#img-lamp {
-    display: block;
-    margin-bottom: 40px;
-    width: 200px;
+    margin: auto;
+    margin-bottom: 30px;
+    max-width: 100px;
+}
+
+section#Solucoes > aside > div#trofeus > div#lamp > div#frase-lamp {
+    margin: auto;
+    margin-bottom: 10%;
+    max-width: 200px;
+}
+
+section#Solucoes > aside > div#trofeus > div#lamp > div#frase-lamp > p {
+    text-align: center;
+    font-family: 'paragrafo', sans-serif;
+    font-size: 1em;
 }
 
 section#Solucoes > aside > div#trofeus > div#account {
     display: block;
-    margin: 0px 0px 0px calc((100% - 980px) * 0.5);
-    margin-left: 20px;
-    margin-right: 20px;
-    max-width: 20%;
+    margin: auto;
+    margin-left: 15px;
+    margin-right: 15px;
+    width: 33.3%;
+    justify-content: center;
+    align-items: center;
+}
+
+section#Solucoes > aside > div#trofeus > div#account > div#img-account {
+    margin: auto;
+    margin-bottom: 30px;
+    max-width: 100px;
+}
+
+section#Solucoes > aside > div#trofeus > div#account > div#frase-account {
+    margin: auto;
+    margin-bottom: 10%;
+    max-width: 200px;
+}
+
+section#Solucoes > aside > div#trofeus > div#account > div#frase-account > p {
     text-align: center;
+    font-family: 'paragrafo', sans-serif;
+    font-size: 1em;
 }
 
 section#Solucoes > aside > div#trofeus > div#block {
     display: block;
-    margin: 0px 0px 0px calc((100% - 980px) * 0.5);
-    margin-left: 20px;
-    margin-right: 20px;
-    max-width: 20%;
-    text-align: center;
+    margin: auto;
+    margin-left: 15px;
+    margin-right: 15px;
+    width: 33.3%;
+    justify-content: center;
+    align-items: center;
 }
+
+section#Solucoes > aside > div#trofeus > div#block > div#img-block {
+    margin: auto;
+    margin-bottom: 30px;
+    max-width: 128px;
+}
+
+section#Solucoes > aside > div#trofeus > div#block > div#frase-block {
+    margin: auto;
+    margin-bottom: 10%;
+    max-width: 200px;
+}
+
+section#Solucoes > aside > div#trofeus > div#block > div#frase-block > p {
+    text-align: center;
+    font-family: 'paragrafo', sans-serif;
+    font-size: 1em;
+}
+
 
 section#ComoFunciona > article > div.informacoessite {
     display: flex;
