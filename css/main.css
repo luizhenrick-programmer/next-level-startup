@@ -499,3 +499,9 @@ footer > p#creditos {
         width: 70%;
     }
 }
+
+@media (max-width: 600px) {
+    section#Home >  aside  > div.redes-sociais > div#parte-2 {
+        display: block;
+    }
+}
