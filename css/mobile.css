@@ -1,0 +1,63 @@
+@charset 'UTF-8';
+
+@media screen and (max-width: 768px) {
+
+    header {
+        position: relative;
+        align-items: center;
+        justify-content: center;
+    }
+
+    span#menu-burguer {
+        display: block;
+        color: white;
+        position: absolute;
+        left: 10px;
+        top: 20px
+    }
+
+    span#menu-burguer:hover {
+        cursor: pointer;
+        background-color: white;
+        color: black;
+
+    }
+
+    section#Solucoes > aside > div#trofeus {
+        display: flex;
+        margin: auto;
+        justify-content: center;
+        width: 80%;
+    }
+
+    section#ComoFunciona > article > div.informacoessite > div.img-mobile {
+        display: none;
+    }
+
+    menu {
+        display: none;
+    }
+
+    section#Home >  aside  > div.redes-sociais > div#parte-1 > h2 {
+        margin-top: 15px;
+        margin: auto;
+        text-align: center;
+    }
+
+    section#Home >  aside > div.redes-sociais > div#parte-1 > button{
+        margin: auto;
+        margin-top: 20px;
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%);
+
+    }
+
+    section#Home > aside > div.redes-sociais > div#parte-2 > picture > img#tablet{
+        display: none;
+    }
+    
+    section#Home > aside > div.redes-sociais > div#parte-2 > picture > img#celular {
+        display: none;
+    }
+}
