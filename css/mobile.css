@@ -38,6 +38,10 @@
         display: none;
     }
 
+    section#Solucoes > article > p {
+        max-width: 90%;
+    }
+
     section#Home >  aside  > div.redes-sociais > div#parte-1 > h2 {
         margin-top: 15px;
         margin: auto;
