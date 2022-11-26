@@ -68,6 +68,7 @@ body, html {
 div.background {
     background: black url(../img/background.jpg) no-repeat fixed;
     background-size: cover;
+    background-position: center center;
 }
 
 header {
@@ -197,7 +198,7 @@ section#Home >  aside  > div.redes-sociais > div#parte-1 > h2 {
 
 section#Home >  aside > div.redes-sociais > div#parte-1 > div{
     display: flex;
-    width: 60%;
+    width: 70%;
     margin: auto;
 }
 
