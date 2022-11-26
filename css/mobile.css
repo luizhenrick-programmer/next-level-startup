@@ -16,6 +16,11 @@
         top: 20px
     }
 
+    section {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
     span#menu-burguer:hover {
         cursor: pointer;
         background-color: white;
@@ -64,5 +69,32 @@
     
     section#Home > aside > div.redes-sociais > div#parte-2 > picture > img#celular {
         display: none;
+    }
+
+    section#ComoFunciona > article > div.informacoessite > div.informacoes {
+        display: block;
+        max-width: 100%;
+        margin: auto;
+        line-height: 2em;
+    }
+
+    section#ComoFunciona > article > div.informacoessite > div.informacoes > h2 {
+        margin: auto;
+        margin-bottom: 25px;
+        font-family: subtitulo, sans-serif;
+        letter-spacing: normal;
+        font-size: 2.5em;
+        text-align: center;
+    }
+
+    section#ComoFunciona > article > div.informacoessite > div.informacoes > p {
+        max-width: 90%;
+        margin: auto;
+        font-family: paragrafo, sans-serif;
+        font-weight: bold;
+        letter-spacing: normal;
+        text-align: justify;
+        text-indent: 30px;
+        font-size: 1.1em;
     }
 }

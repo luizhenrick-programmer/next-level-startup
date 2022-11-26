@@ -54,6 +54,11 @@
     padding: 0px;
 }
 
+.material-icons {
+    margin: auto;
+    color: white;
+}
+
 body, html {
     overflow-x: hidden;
     background-color: var(--color09);
@@ -66,22 +71,20 @@ div.background {
 }
 
 header {
-    width: 100%;
     margin: auto;
     padding: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    display: flex; 
+    position: relative;
 }
 
 header > div.logo {
-    margin: 0px;
+    margin: auto;
     padding: 0px;
-    margin-right: 10%;
+    justify-content: center;
+    align-items: center;
 }
 
 header > div.logo > h1 {
-    margin: 0px;
     font-family: 'open sans', sans-serif;
     font-weight: bold;
     font-size: 3.75em;
@@ -112,31 +115,57 @@ span#menu-burguer {
 }
 
 menu {
-    display: flex;
-    margin-top: -5%;
-    justify-content: center; 
+    margin: auto;
+    margin-top: 5px;
+    margin-right: 10px;
+    justify-content: center;
     align-items: center;
 }
 
-menu li {
-    display: inline-block;
+menu > ul {
+    margin: 0px;
+    padding: 0px;
 }
 
-menu li > a {
-    margin: 0px;
+menu > ul > li {
+    display: inline-block;
     padding: 20px;
+}
+
+menu > ul > li > div.menuheader {
+    display: inline-flex;
+    padding: 5px
+}
+
+menu > ul>  li > div.menuheader > span {
+    margin: 0px;
+    padding: 0px;
+}
+
+menu > ul > li > div.menuheader > span.reference {
+    margin: auto;
+    margin-left: 7px;
+}
+
+menu > ul > li > div.menuheader > span.reference > a {
     color: white;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 1em;
+    font-size: 1.1em;
     text-decoration: none;
 }
 
-menu li > a:hover {
-    color: rgb(var(--color-menu-hover));
+menu > ul > li > div.menuheader:hover {
+    background-color: white;
+    border-radius: 10px;
 }
 
-menu li > a:checked {
-    color: rgb(var(--color-menu-hover))
+menu > ul > li > div.menuheader:hover > span:nth-child(1) {
+    color: black;
+}
+
+menu > ul > li > div.menuheader:hover > span:nth-child(2) > a {
+    color: black;
+    font-weight: bolder;
 }
 
 section {
@@ -166,22 +195,34 @@ section#Home >  aside  > div.redes-sociais > div#parte-1 > h2 {
     max-width: 500px;
 }
 
-section#Home >  aside > div.redes-sociais > div#parte-1 > button{
-    background-color: transparent;
-    background-image: url(../img/instagram.png);
-    background-position: 10%;
-    background-repeat: no-repeat;
-    background-attachment: scroll;
-    color: white;
-    border: none;
-    width: 300px;
-    height: 50px;
-    display: block;
+section#Home >  aside > div.redes-sociais > div#parte-1 > div{
+    display: flex;
+    width: 60%;
     margin: auto;
-    font-size: 1em;
 }
 
-section#Home >  aside > div.redes-sociais > div#parte-1 > button:hover {
+section#Home >  aside > div.redes-sociais > div#parte-1 > div > div#instagram{
+    background-color: transparent;
+    background-image: url(../img/instagram.png);
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    width: 40px;
+    height: 40px;
+}
+
+section#Home >  aside > div.redes-sociais > div#parte-1 > div > a{
+    color: white;
+    border: none;
+    margin: auto;
+    margin-left: 0px;
+    font-size: 1em;
+    font-family: 'Courier New', Courier, monospace;
+    text-decoration: none;
+    padding: 5px;
+}
+
+section#Home >  aside > div.redes-sociais > div#parte-1 > div:hover {
     border: 2px solid white;
     cursor: pointer;
     text-decoration: underline;
