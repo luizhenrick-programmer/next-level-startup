@@ -197,24 +197,34 @@ section#Home >  aside  > div.redes-sociais > div#parte-1 > h2 {
 }
 
 section#Home >  aside > div.redes-sociais > div#parte-1 > div {
-    display: flex;
-    max-width: 60%;
+    display: block;
+    max-width: 50%;
     margin: auto;
 }
 
-section#Home >  aside > div.redes-sociais > div#parte-1 > div > span#instagram{
+section#Home > aside > div.redes-sociais > div#parte-1 > div > a {
+    display: flex;
+    width: 100%;
+}
+
+section#Home >  aside > div.redes-sociais > div#parte-1 > div > a > span#icon {
     background-color: transparent;
     background-image: url(../img/instagram.png);
     background-position: center center;
     background-repeat: no-repeat;
     background-attachment: scroll;
-    width: 40px;
+    min-width: 40px;
     height: 40px;
-    margin: 0px;
 }
 
-section#Home >  aside > div.redes-sociais > div#parte-1 > div > span#link {
+section#Home >  aside > div.redes-sociais > div#parte-1 > div > a > span#text {
+    display: block;
+    padding-right: 5px;
     margin: auto;
+    color: #FFFF;
+    text-decoration: none;
+    height: 40px;
+    line-height: 40px;
 }
 
 section#Home >  aside > div.redes-sociais > div#parte-1 > div > span > a{
