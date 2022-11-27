@@ -98,4 +98,29 @@
         text-indent: 30px;
         font-size: 1.1em;
     }
+
+    footer {
+        max-width: 100%;
+        background-color: var(--color08);
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    footer > div.logo {
+        margin: 0px;
+        margin-bottom: 25px;
+        padding: 0px;
+        max-width: 100%;
+    }
+
+    footer > p#slogan-final {
+        max-width: 250px;
+        margin: auto;
+        margin-bottom: 30px;
+        font-family: paragrafo, sans-serif;
+        color: white;
+        text-align: center;
+    }
+    
+
 }

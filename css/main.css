@@ -196,23 +196,29 @@ section#Home >  aside  > div.redes-sociais > div#parte-1 > h2 {
     max-width: 500px;
 }
 
-section#Home >  aside > div.redes-sociais > div#parte-1 > div{
+section#Home >  aside > div.redes-sociais > div#parte-1 > div {
     display: flex;
-    width: 70%;
+    max-width: 80%;
     margin: auto;
 }
 
-section#Home >  aside > div.redes-sociais > div#parte-1 > div > div#instagram{
+section#Home >  aside > div.redes-sociais > div#parte-1 > div > span#instagram{
     background-color: transparent;
     background-image: url(../img/instagram.png);
-    background-position: 50%;
+    background-position: center center;
     background-repeat: no-repeat;
     background-attachment: scroll;
     width: 40px;
     height: 40px;
+    margin: 0px;
 }
 
-section#Home >  aside > div.redes-sociais > div#parte-1 > div > a{
+section#Home >  aside > div.redes-sociais > div#parte-1 > div > span {
+    margin: auto;
+    margin-left: 0px;
+}
+
+section#Home >  aside > div.redes-sociais > div#parte-1 > div > span > a{
     color: white;
     border: none;
     margin: auto;
@@ -220,7 +226,6 @@ section#Home >  aside > div.redes-sociais > div#parte-1 > div > a{
     font-size: 1em;
     font-family: 'Courier New', Courier, monospace;
     text-decoration: none;
-    padding: 5px;
 }
 
 section#Home >  aside > div.redes-sociais > div#parte-1 > div:hover {
@@ -435,7 +440,6 @@ section#ComoFunciona > article > div.informacoessite > div.informacoes > p {
 section#SobreNos {
     background-color: rgb(207,223,242);
     margin: auto;
-    padding: 7%;
 }
 
 section#SobreNos > h2 {
@@ -448,6 +452,7 @@ section#SobreNos > h2 {
 }
 
 section#SobreNos > p#slogan {
+    max-width: 100%;
     margin: auto;
     margin-bottom: 50px;
     font-family: palatino, book antiqua, palatino linotype, serif;
@@ -460,7 +465,7 @@ section#SobreNos > p#slogan {
 section#SobreNos > p {
     margin: auto;
     margin-bottom: 10px;
-    max-width: 80%;
+    max-width: 90%;
     font-family: paragrafo, sans-serif;
     font-weight: bold;
     font-size: 1.2em;
