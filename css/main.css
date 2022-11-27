@@ -130,43 +130,42 @@ menu > ul {
 
 menu > ul > li {
     display: inline-block;
-    padding: 20px;
+    padding: 10px;
 }
 
 menu > ul > li > div.menuheader {
-    display: inline-flex;
-    padding: 5px
+    display: inline-block;
 }
 
-menu > ul>  li > div.menuheader > span {
-    margin: 0px;
-    padding: 0px;
+menu > ul>  li > div.menuheader > a {
+    display: flex;
+    height: 24px;
+    padding: 5px;
 }
 
-menu > ul > li > div.menuheader > span.reference {
-    margin: auto;
-    margin-left: 7px;
-}
-
-menu > ul > li > div.menuheader > span.reference > a {
+menu > ul > li > div.menuheader > a > span.reference {
     color: white;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1.1em;
     text-decoration: none;
+    line-height: 26px;
 }
 
-menu > ul > li > div.menuheader:hover {
+menu > ul > li > div.menuheader > a:hover {
     background-color: white;
     border-radius: 10px;
+    text-decoration: none;
 }
 
-menu > ul > li > div.menuheader:hover > span:nth-child(1) {
+menu > ul > li > div.menuheader:hover > a > span:nth-child(1) {
     color: black;
+    text-decoration: none;
 }
 
-menu > ul > li > div.menuheader:hover > span:nth-child(2) > a {
+menu > ul > li > div.menuheader:hover > a > span:nth-child(2) {
     color: black;
     font-weight: bolder;
+    text-decoration: none;
 }
 
 section {
