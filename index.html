@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="./css/main.css">
     <link rel="stylesheet" href="./css/mobile.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="js/menu.js"></script>
     <title>Next Level Startup</title>
 </head>
 <body>
@@ -41,7 +42,7 @@
                     </li>
                     <li>
                         <div class="menuheader">
-                            <a href="#ComoFunciona">
+                            <a href="#ComoFunciona" onclick="abaixa()">
                                 <span id="ComoFunciona" class="material-icons">help</span>
                                 <span class="reference">COMO FUNCIONA</span>
                             </a>
@@ -166,5 +167,11 @@
         <p id="slogan-final">Sempre dispostos a oferecer o melhor para juntos criarmos uma grande "Nação Next Level".</p>
         <p id="creditos">© 2022 por Next Level Startup</p>
     </footer>
+    <script>
+        const myElement = document.querySelector("body > div.background > header > menu > ul > li:nth-child(3) > div > a")
+        function abaixa() {
+            $('html, body').animate({ scrollTop: 200 }, 50);
+        }
+    </script>
 </body>
 </html>
