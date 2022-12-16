@@ -1,5 +1,8 @@
-const btnMobile = document.getElementsByTagName('body')[0]
+const MenuMobile = document.getElementById('menu-hamburguer')
 
-function abaixa() {
-    window.scrollTo(0, 500)
+function clickMenu() {
+    const header = document.getElementById('cabecalho')
+    header.classList.toggle('active')
 }
+
+MenuMobile.addEventListener('click', clickMenu)
