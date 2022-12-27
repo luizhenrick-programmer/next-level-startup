@@ -11,6 +11,14 @@
 
     header.active menu {
         display: block;
+        background-color: rgba(128, 128, 128, 0.404);
+        position: absolute;
+        top: 0px;
+        left: 0px;
+    }
+
+    header.active menu li {
+        display: block;
     }
 
     span#menu-burguer {
