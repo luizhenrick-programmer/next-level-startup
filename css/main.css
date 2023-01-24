@@ -326,8 +326,14 @@ section#Solucoes > aside > div#trofeus > div#lamp {
 
 section#Solucoes > aside > div#trofeus > div#lamp > div#img-lamp {
     margin: auto;
-    margin-bottom: 30px;
     max-width: 100px;
+    margin-bottom: 30px;
+}
+
+
+section#Solucoes > aside > div#trofeus > div#lamp > div#img-lamp > span#lampada {
+    color: black;
+    font-size: 100px;
 }
 
 section#Solucoes > aside > div#trofeus > div#lamp > div#frase-lamp {
