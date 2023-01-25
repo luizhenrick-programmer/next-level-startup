@@ -196,14 +196,12 @@ section#Home >  aside  > div.redes-sociais > div#parte-1 > h2 {
 }
 
 section#Home >  aside > div.redes-sociais > div#parte-1 > div {
-    display: block;
-    max-width: 60%;
-    margin: auto;
+    transform: translateX(70%);
+    width: 200px;
 }
 
 section#Home > aside > div.redes-sociais > div#parte-1 > div > a {
     display: flex;
-    width: 100%;
 }
 
 section#Home >  aside > div.redes-sociais > div#parte-1 > div > a > span#icon {
@@ -212,17 +210,13 @@ section#Home >  aside > div.redes-sociais > div#parte-1 > div > a > span#icon {
     background-position: center center;
     background-repeat: no-repeat;
     background-attachment: scroll;
-    min-width: 40px;
+    width: 40px;
     height: 40px;
 }
 
 section#Home >  aside > div.redes-sociais > div#parte-1 > div > a > span#text {
-    display: block;
-    padding-right: 5px;
-    margin: auto;
     color: #FFFF;
-    text-decoration: none;
-    height: 40px;
+    font-family: 'paragrafo', sans-serif;
     line-height: 40px;
 }
 
@@ -308,97 +302,94 @@ section#Solucoes > aside > h2 {
     padding-bottom: 60px;
 }
 
-section#Solucoes > aside > div#trofeus {
+section#Solucoes > aside > div#competencias {
     display: flex;
     margin: auto;
-    justify-content: center;
+    width: 90%;
 }
 
-section#Solucoes > aside > div#trofeus > div#lamp {
-    display: block;
-    margin: auto;
-    margin-left: 15px;
-    margin-right: 15px;
-    width: 33.3%;
-    justify-content: center;
-    align-items: center;
+section#Solucoes > aside > div#competencias > div#eficiencia {
+    margin: 0px auto;
 }
 
-section#Solucoes > aside > div#trofeus > div#lamp > div#img-lamp {
+section#Solucoes > aside > div#competencias > div#eficiencia > div#img-premium {
     margin: auto;
-    max-width: 100px;
+    margin-bottom: 30px;
+    max-width: 80px;
+}
+
+
+section#Solucoes > aside > div#competencias > div#eficiencia > div#img-premium > span#icon-premium {
+    color: rgba(0, 0, 0, 0.575);
+    font-size: 80px;
+}
+
+section#Solucoes > aside > div#competencias > div#eficiencia > div#frase-premium {
+    margin: auto;
+    max-width: 205px;
+    text-align: center;
     margin-bottom: 30px;
 }
 
-
-section#Solucoes > aside > div#trofeus > div#lamp > div#img-lamp > span#lampada {
-    color: black;
-    font-size: 100px;
-}
-
-section#Solucoes > aside > div#trofeus > div#lamp > div#frase-lamp {
-    margin: auto;
-    margin-bottom: 10%;
-    max-width: 200px;
-}
-
-section#Solucoes > aside > div#trofeus > div#lamp > div#frase-lamp > p {
+section#Solucoes > aside > div#competencias > div#eficiencia > div#frase-premium > p {
     text-align: center;
     font-family: 'paragrafo', sans-serif;
     font-size: 1em;
 }
 
-section#Solucoes > aside > div#trofeus > div#account {
-    display: block;
-    margin: auto;
-    margin-left: 15px;
-    margin-right: 15px;
-    width: 33.3%;
-    justify-content: center;
-    align-items: center;
+section#Solucoes > aside > div#competencias > div#forum-duvidas {
+    margin: 0px auto;
 }
 
-section#Solucoes > aside > div#trofeus > div#account > div#img-account {
+section#Solucoes > aside > div#competencias > div#forum-duvidas > div#img-forum {
     margin: auto;
     margin-bottom: 30px;
-    max-width: 100px;
+    max-width: 80px;
 }
 
-section#Solucoes > aside > div#trofeus > div#account > div#frase-account {
+
+section#Solucoes > aside > div#competencias > div#forum-duvidas > div#img-forum > span#icon-forum {
+    color: rgba(0, 0, 0, 0.575);
+    font-size: 80px;
+}
+
+section#Solucoes > aside > div#competencias > div#forum-duvidas > div#frase-forum {
     margin: auto;
-    margin-bottom: 10%;
-    max-width: 200px;
+    max-width: 205px;
+    text-align: center;
+    margin-bottom: 30px;
 }
 
-section#Solucoes > aside > div#trofeus > div#account > div#frase-account > p {
+section#Solucoes > aside > div#competencias > div#forum-duvidas > div#frase-forum > p {
     text-align: center;
     font-family: 'paragrafo', sans-serif;
     font-size: 1em;
 }
 
-section#Solucoes > aside > div#trofeus > div#block {
-    display: block;
-    margin: auto;
-    margin-left: 15px;
-    margin-right: 15px;
-    width: 33.3%;
-    justify-content: center;
-    align-items: center;
+section#Solucoes > aside > div#competencias > div#seguranca {
+    margin: 0px auto;
 }
 
-section#Solucoes > aside > div#trofeus > div#block > div#img-block {
+section#Solucoes > aside > div#competencias > div#seguranca > div#img-seguranca {
     margin: auto;
     margin-bottom: 30px;
-    max-width: 128px;
+    max-width: 80px;
 }
 
-section#Solucoes > aside > div#trofeus > div#block > div#frase-block {
+
+section#Solucoes > aside > div#competencias > div#seguranca > div#img-seguranca > span#icon-security {
+    color: rgba(0, 0, 0, 0.575);
+    font-size: 80px;
+}
+
+section#Solucoes > aside > div#competencias > div#seguranca > div#frase-seguranca {
     margin: auto;
-    margin-bottom: 10%;
-    max-width: 200px;
+    max-width: 205px;
+    text-align: center;
+    margin-bottom: 30px;
 }
 
-section#Solucoes > aside > div#trofeus > div#block > div#frase-block > p {
+section#Solucoes > aside > div#competencias > div#seguranca > div#frase-seguranca > p {
     text-align: center;
     font-family: 'paragrafo', sans-serif;
     font-size: 1em;

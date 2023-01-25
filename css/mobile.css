@@ -52,13 +52,6 @@
         display: none;
     }
 
-    section#Solucoes > aside > div#trofeus {
-        display: flex;
-        margin: auto;
-        justify-content: center;
-        width: 80%;
-    }
-
     section#ComoFunciona > article > div.informacoessite > div.img-mobile {
         display: none;
     }
