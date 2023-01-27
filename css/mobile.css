@@ -116,6 +116,38 @@
         font-size: 1.1em;
     }
 
+    section#Solucoes > aside > div#competencias > div#eficiencia > div#frase-premium {
+        max-width: 350px;
+        margin-right: 10px;
+        border: 2px solid grey;
+        padding: 5px;
+    }
+
+    section#Solucoes > aside > div#competencias > div#eficiencia > div#frase-premium > p {
+        text-align: justify;
+    }
+
+    section#Solucoes > aside > div#competencias > div#forum-duvidas > div#frase-forum {
+        max-width: 350px;
+        margin-right: 10px;
+        border: 2px solid grey;
+        padding: 5px;
+    }
+
+    section#Solucoes > aside > div#competencias > div#forum-duvidas > div#frase-forum > p {
+        text-align: justify;
+    }
+
+    section#Solucoes > aside > div#competencias > div#seguranca > div#frase-seguranca {
+        max-width: 360px;
+        border: 2px solid grey;
+        padding: 5px;
+    }
+
+    section#Solucoes > aside > div#competencias > div#seguranca > div#frase-seguranca > p {
+        text-align: justify;
+    }
+
     footer {
         max-width: 100%;
         background-color: var(--color08);
