@@ -280,9 +280,8 @@ section#Solucoes > article > p {
 
 section#Solucoes > aside {
     background-color: #a6a39f2a;
-    margin: auto;
     margin-top: 10vh;
-    min-height: 350px;
+    padding: 15px;
 }
 
 section#Solucoes > aside > h2 {
