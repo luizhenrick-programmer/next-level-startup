@@ -183,6 +183,57 @@
         color: white;
         text-align: center;
     }
-    
+
+    footer > div#contato {
+        display: flex;
+        flex-direction: column;
+    }
+
+    footer > div#contato > div#telefone {
+        display: flex;
+        margin: auto;
+        width: 220px;
+    }
+
+    footer > div#contato > div#telefone > span {
+        margin: 0px;
+        margin-right: 10px;
+    }
+
+    footer > div#contato > div#telefone > p {
+        font-family: 'paragrafo', sans-serif;
+        color: white;
+    }
+
+    footer > div#contato > div#email {
+        display: flex;
+        margin: auto;
+        width: 220px;
+    }
+
+    footer > div#contato > div#email > span {
+        margin: 0px;
+        margin-right: 10px;
+    }
+
+    footer > div#contato > div#email > p {
+        font-family: 'paragrafo', sans-serif;
+        color: white;
+    }
+
+    footer > div#contato > div#local {
+        display: flex;
+        margin: auto;
+        width: 220px;
+    }
+
+    footer > div#contato > div#local > span {
+        margin-right: 10px;
+    }
+
+    footer > div#contato > div#local > p {
+        font-family: 'paragrafo', sans-serif;
+        color: white;
+    }
 
 }
