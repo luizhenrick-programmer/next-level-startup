@@ -182,20 +182,22 @@ section#Home > aside > div.redes-sociais > div#parte-1 {
 }
 
 section#Home > aside > div.redes-sociais > div#parte-1 > h2 {
-    font-family: Futura,Trebuchet MS,Arial,sans-serif;
+    font-family: 'Futura',Trebuchet MS,Arial,sans-serif;
     font-size: 2.5em;
     font-weight: normal; 
     color: white;
     max-width: 500px;
+    text-align: center;
 }
 
 section#Home > aside > div.redes-sociais > div#parte-1 > div {
-    transform: translateX(70%);
-    width: 200px;
+    display: flex;
+    justify-content: center;
 }
 
 section#Home > aside > div.redes-sociais > div#parte-1 > div > a {
     display: flex;
+    max-width: 250px;
 }
 
 section#Home > aside > div.redes-sociais > div#parte-1 > div > a > span#icon {
@@ -210,21 +212,12 @@ section#Home > aside > div.redes-sociais > div#parte-1 > div > a > span#icon {
 
 section#Home >  aside > div.redes-sociais > div#parte-1 > div > a > span#text {
     color: #FFFF;
-    font-family: 'paragrafo', sans-serif;
-    line-height: 40px;
-}
-
-section#Home >  aside > div.redes-sociais > div#parte-1 > div > span > a{
-    color: white;
-    border: none;
-    margin: auto;
-    margin-left: 0px;
-    font-size: 1em;
     font-family: 'Courier New', Courier, monospace;
-    text-decoration: none;
+    line-height: 40px;
+    white-space: nowrap;
 }
 
-section#Home >  aside > div.redes-sociais > div#parte-1 > div:hover {
+section#Home >  aside > div.redes-sociais > div#parte-1 > div > a:hover {
     border: 2px solid white;
     cursor: pointer;
     text-decoration: underline;
