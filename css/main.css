@@ -55,8 +55,9 @@
 }
 
 .material-icons {
-    margin: auto;
+    height: 30px;
     color: white;
+    vertical-align: middle;
 }
 
 body, html {
@@ -73,19 +74,19 @@ div.background {
 
 header {
     margin: auto;
-    padding: 20px;
-    display: flex; 
-    position: relative;
 }
 
-header > div.logo {
-    margin: auto;
-    padding: 0px;
-    justify-content: center;
-    align-items: center;
+span#menu-burguer {
+    display: none;
 }
 
-header > div.logo > h1 {
+.nav-bar {
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5rem 3.5rem;
+}
+
+.logo h1 {
     font-family: 'open sans', sans-serif;
     font-weight: bold;
     font-size: 3.75em;
@@ -93,15 +94,15 @@ header > div.logo > h1 {
     line-height: 0.85em;
 }
 
-header > div.logo > h1 > span.logo-1 {
+.logo-span-item1 {
     color: var(--color-logo1);
 }
 
-header >  div.logo > h1 > span.logo-2 {
+.logo-span-item2 {
     color: var(--color-logo2);
 }
 
-header > div.logo > p.logo-3 {
+.logo-p {
     color: white;
     font-family: open sans,sans-serif;
     font-size: 0.8em;
@@ -111,58 +112,47 @@ header > div.logo > p.logo-3 {
     text-transform: uppercase;
 }
 
-span#menu-burguer {
-    display: none;
-}
-
-menu {
-    margin: auto;
-    margin-top: 5px;
-    margin-right: 10px;
-    justify-content: center;
+.nav-list {
+    display: flex;
     align-items: center;
 }
 
-menu > ul {
-    margin: 0px;
-    padding: 0px;
-}
-
-menu > ul > li {
-    display: inline-block;
-    padding: 10px;
-}
-
-menu > ul > li > div.menuheader {
-    display: inline-block;
-}
-
-menu > ul>  li > div.menuheader > a {
+.nav-list ul {
+    margin-top: -30px;
     display: flex;
-    height: 24px;
-    padding: 5px;
+    justify-content: center;
+    list-style: none;
 }
 
-menu > ul > li > div.menuheader > a > span.reference {
+.nav-item {
+    margin-left: 15px;
+}
+
+.nav-link {
+    padding: 8px;
     color: white;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 1.1em;
+    font-size: 1.1rem;
+    font-weight: 500;
     text-decoration: none;
-    line-height: 26px;
+    white-space: nowrap;
 }
 
-menu > ul > li > div.menuheader > a:hover {
+.nav-item-text {
+    color: white;
+}
+
+.nav-link:hover {
     background-color: white;
     border-radius: 10px;
-    text-decoration: none;
 }
 
-menu > ul > li > div.menuheader:hover > a > span:nth-child(1) {
+.nav-link:hover span:nth-child(1) {
     color: black;
     text-decoration: none;
 }
 
-menu > ul > li > div.menuheader:hover > a > span:nth-child(2) {
+.nav-link:hover span:nth-child(2) {
     color: black;
     font-weight: bolder;
     text-decoration: none;
@@ -173,34 +163,34 @@ section {
     padding-bottom: 15vh;
 }
 
-section#Home > aside > div.redes-sociais {
+.redes-sociais {
     display: flex;
 }
 
-section#Home > aside > div.redes-sociais > div#parte-1 {
+.redes-sociais div#parte-1 {
     margin: auto;
 }
 
-section#Home > aside > div.redes-sociais > div#parte-1 > h2 {
+div.redes-sociais h2 {
+    margin-bottom: 20px;
+    color: white;
+    max-width: 500px;
     font-family: 'Futura',Trebuchet MS,Arial,sans-serif;
     font-size: 2.5em;
     font-weight: normal; 
-    color: white;
-    max-width: 500px;
     text-align: center;
 }
 
-section#Home > aside > div.redes-sociais > div#parte-1 > div {
+div#parte-1 div {
     display: flex;
     justify-content: center;
 }
 
-section#Home > aside > div.redes-sociais > div#parte-1 > div > a {
+div#parte-1 a {
     display: flex;
-    max-width: 250px;
 }
 
-section#Home > aside > div.redes-sociais > div#parte-1 > div > a > span#icon {
+span#icon {
     background-color: transparent;
     background-image: url(../img/instagram.png);
     background-position: center center;
@@ -210,36 +200,37 @@ section#Home > aside > div.redes-sociais > div#parte-1 > div > a > span#icon {
     height: 40px;
 }
 
-section#Home >  aside > div.redes-sociais > div#parte-1 > div > a > span#text {
+span#text {
     color: #FFFF;
     font-family: 'Courier New', Courier, monospace;
     line-height: 40px;
     white-space: nowrap;
+    margin-right: 5px;
 }
 
-section#Home >  aside > div.redes-sociais > div#parte-1 > div > a:hover {
+.redes-sociais a:hover {
     border: 2px solid white;
     cursor: pointer;
     text-decoration: underline;
 }
 
-section#Home >  aside  > div.redes-sociais > div#parte-2 {
+div#parte-2 {
     display: flex;
     margin: auto;
 }
 
-section#Home > aside > div.redes-sociais > div#parte-2 > picture > img#tablet{
+img#tablet{
     position: relative;
     left: 25%;
 }
 
-section#Home > aside > div.redes-sociais > div#parte-2 > picture > img#celular {
+img#celular {
     position: relative;
     left: -180%;
     bottom: -60%;
 }
 
-section#Solucoes > article > h2#comeco {
+h2#comeco {
     font-family: titulo, sans-serif;
     font-size: 2.2em;
     font-weight: normal;
@@ -248,7 +239,7 @@ section#Solucoes > article > h2#comeco {
     margin-top: 4%;
 }
 
-section#Solucoes > article > p#atribuicao {
+p#atribuicao {
     font-family: georgia,palatino,book antiqua,palatino linotype,serif;
     font-size: 1.2em;
     font-weight: normal;
@@ -260,7 +251,7 @@ section#Solucoes > article > p#atribuicao {
     margin-bottom: 40px;
 }
 
-section#Solucoes > article > p {
+section#Solucoes p {
     margin: auto;
     margin-bottom: 30px;
     font-family: paragrafo, sans-serif;
@@ -271,118 +262,91 @@ section#Solucoes > article > p {
     text-indent: 50px;
 }
 
-section#Solucoes > aside {
+section#Solucoes aside {
     background-color: #a6a39f2a;
     margin-top: 10vh;
     padding: 15px;
 }
 
-section#Solucoes > aside > h2 {
+section#Solucoes h2 {
     margin: auto;
-    max-width: 70%;
-    font-family: titulo, sans-serif;
-    font-size: 2em;
-    font-weight: normal;
-    text-align: center;
     padding: 20px;
-    padding-bottom: 60px;
+    font-family: titulo, sans-serif;
+    font-size: 2rem;
+    text-align: center;
 }
 
-section#Solucoes > aside > div#competencias {
+.content {
     display: flex;
     margin: auto;
     width: 90%;
 }
 
-section#Solucoes > aside > div#competencias > div#eficiencia {
+.content-div {
     margin: 0px auto;
 }
 
-section#Solucoes > aside > div#competencias > div#eficiencia > div#img-premium {
+.content-div-icon {
     margin: auto;
     margin-bottom: 30px;
-    max-width: 80px;
+    width: 80px;
+    height: 80px;
 }
 
+.content-div-text {
+    margin: auto;
+    margin-bottom: 30px;
+    max-width: 205px;
+}
 
-section#Solucoes > aside > div#competencias > div#eficiencia > div#img-premium > span#icon-premium {
+span#icon-premium {
+    width: 80px;
+    height: 80px;
     color: rgba(0, 0, 0, 0.575);
     font-size: 80px;
 }
 
-section#Solucoes > aside > div#competencias > div#eficiencia > div#frase-premium {
-    margin: auto;
+div#frase-premium > p {
     max-width: 205px;
-    text-align: center;
-    margin-bottom: 30px;
-}
-
-section#Solucoes > aside > div#competencias > div#eficiencia > div#frase-premium > p {
-    text-align: center;
     font-family: 'paragrafo', sans-serif;
-    font-size: 1em;
-}
-
-section#Solucoes > aside > div#competencias > div#forum-duvidas {
-    margin: 0px auto;
-}
-
-section#Solucoes > aside > div#competencias > div#forum-duvidas > div#img-forum {
-    margin: auto;
-    margin-bottom: 30px;
-    max-width: 80px;
+    font-size: 1rem;
+    text-align: center;
+    text-indent: 0px;
 }
 
 
-section#Solucoes > aside > div#competencias > div#forum-duvidas > div#img-forum > span#icon-forum {
+span#icon-forum {
+    width: 80px;
+    height: 80px;
     color: rgba(0, 0, 0, 0.575);
     font-size: 80px;
 }
 
-section#Solucoes > aside > div#competencias > div#forum-duvidas > div#frase-forum {
-    margin: auto;
+div#frase-forum > p {
     max-width: 205px;
-    text-align: center;
-    margin-bottom: 30px;
-}
-
-section#Solucoes > aside > div#competencias > div#forum-duvidas > div#frase-forum > p {
-    text-align: center;
     font-family: 'paragrafo', sans-serif;
-    font-size: 1em;
+    font-size: 1rem;
+    text-align: center;
+    text-indent: 0px;
 }
 
-section#Solucoes > aside > div#competencias > div#seguranca {
-    margin: 0px auto;
-}
-
-section#Solucoes > aside > div#competencias > div#seguranca > div#img-seguranca {
-    margin: auto;
-    margin-bottom: 30px;
-    max-width: 80px;
-}
-
-
-section#Solucoes > aside > div#competencias > div#seguranca > div#img-seguranca > span#icon-security {
+span#icon-security {
+    width: 80px;
+    height: 80px;
     color: rgba(0, 0, 0, 0.575);
     font-size: 80px;
 }
 
-section#Solucoes > aside > div#competencias > div#seguranca > div#frase-seguranca {
-    margin: auto;
+div#frase-seguranca > p {
     max-width: 205px;
-    text-align: center;
-    margin-bottom: 30px;
-}
-
-section#Solucoes > aside > div#competencias > div#seguranca > div#frase-seguranca > p {
-    text-align: center;
     font-family: 'paragrafo', sans-serif;
-    font-size: 1em;
+    font-size: 1rem;
+    text-align: center;
+    text-indent: 0px;
 }
 
 
-section#ComoFunciona > article > div.informacoessite {
+.info {
     display: flex;
     margin: auto;
     max-width: 100%;
@@ -390,18 +354,18 @@ section#ComoFunciona > article > div.informacoessite {
     justify-content: center;
 }
 
-section#ComoFunciona > article > div.informacoessite > div.img-mobile {
+.img-mobile {
     display: block;
     margin: auto;
     max-width: 40%;
 }
 
-section#ComoFunciona > article > div.informacoessite > div.img-mobile > img#mobile {
+img#mobile {
     position: relative;
     max-width: 100%;
 }
 
-section#ComoFunciona > article > div.informacoessite > div.informacoes {
+.info-text {
     display: block;
     margin: auto;
     margin-left: 2%;
@@ -409,31 +373,31 @@ section#ComoFunciona > article > div.informacoessite > div.informacoes {
     line-height: 2em;
 }
 
-section#ComoFunciona > article > div.informacoessite > div.informacoes > h2 {
+.info-text h2 {
     margin-bottom: 25px;
     margin-left: -7%;
     font-family: subtitulo, sans-serif;
-    letter-spacing: normal;
     font-size: 2.5em;
     text-align: center;
+    letter-spacing: normal;
 }
 
-section#ComoFunciona > article > div.informacoessite > div.informacoes > p {
+.info-text p {
     max-width: 600px;
     font-family: paragrafo, sans-serif;
     font-weight: bold;
-    letter-spacing: normal;
     text-align: justify;
     text-indent: 30px;
     font-size: 1.1em;
+    letter-spacing: normal;
 }
 
 section#SobreNos {
-    background-color: rgb(207,223,242);
     margin: auto;
+    background-color: rgb(207,223,242);
 }
 
-section#SobreNos > h2 {
+section#SobreNos h2 {
     margin: auto;
     margin-bottom: 15px;
     font-family: titulo, sans-serif;
@@ -443,20 +407,20 @@ section#SobreNos > h2 {
 }
 
 section#SobreNos > p#slogan {
-    max-width: 100%;
     margin: auto;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
+    max-width: 100%;
+    color: #0d0d0de7;
     font-family: palatino, book antiqua, palatino linotype, serif;
     font-weight: normal;
     font-size: 1.2em;
-    color: #0d0d0de7;
     text-align: center;
 }
 
 section#SobreNos > p {
     margin: auto;
     margin-bottom: 10px;
-    max-width: 90%;
+    max-width: 65%;
     font-family: paragrafo, sans-serif;
     font-weight: bold;
     font-size: 1.2em;
@@ -466,55 +430,101 @@ section#SobreNos > p {
 }
 
 footer {
+    padding: 35px;
+    padding-bottom: 10px;
     background-color: var(--color08);
-    padding-top: 30px;
-    padding-left: 60px;
-    padding-bottom: 20px;
-    color: white;
 }
 
-footer > div.logo {
-    margin: 0px;
+footer > div#fim {
+    display: flex;
+    margin: auto;
+    justify-content: center;
+}
+
+footer > div#fim > div#logoandslogan {
+    margin: auto;
+    display: block;
+    max-width: 50%;
+}
+
+footer div.logo {
     margin-bottom: 25px;
-    padding: 0px;
-    max-width: 15%;
 }
 
-footer > div.logo > h1 {
-    margin: 0px;
-    font-family: 'open sans', sans-serif;
-    font-weight: bold;
-    font-size: 3.75em;
-    text-align: center;
-    line-height: 0.85em;
-}
-
-footer > div.logo > h1 > span.logo-1 {
-    color: var(--color-logo1);
-}
-
-footer >  div.logo > h1 > span.logo-2 {
-    color: var(--color-logo2);
-}
-
-footer > div.logo > p.logo-3 {
-    color: white;
-    font-family: 'open sans', sans-serif;
-    font-size: 0.8em;
-    text-align: center;
-    letter-spacing: 5px;
-    line-height: 3.5em;
-    text-transform: uppercase;
-}
-
-footer > p#slogan-final {
+footer > div#fim > div#logoandslogan > p#slogan-final {
+    margin: auto;
     max-width: 250px;
     font-family: paragrafo, sans-serif;
+    color: white;
+    text-align: center;
+}
+
+footer > div#fim > div#contatos {
+    display: block;
+    max-width: 50%;
+    margin: auto;
+}
+
+footer > div#fim > div#contatos > p {
+    margin: -35px;
+    margin-top: 20px;
+    margin-bottom: 25px;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.2em;
+}
+
+footer > div#fim > div#contatos > div#telefone {
+    display: flex;
+    margin: auto;
+    margin-bottom: 15px;
+}
+
+footer > div#fim > div#contatos > div#telefone > span {
+    margin: 0px;
+    margin-right: 10px;
+}
+
+footer > div#fim > div#contatos > div#telefone > p {
+    font-family: 'paragrafo', sans-serif;
+    color: white;
+    letter-spacing: 0.1em;
+}
+
+footer > div#fim > div#contatos > div#email {
+    display: flex;
+    margin: auto;
+    margin-bottom: 15px;
+}
+
+footer > div#fim > div#contatos > div#email > span {
+    margin: 0px;
+    margin-right: 10px;
+}
+
+footer > div#fim > div#contatos > div#email > p {
+    font-family: 'paragrafo', sans-serif;
+    color: white;
+    letter-spacing: 0.1em;
+}
+
+footer > div#fim > div#contatos > div#local {
+    display: flex;
+    margin: auto;
+}
+
+footer > div#fim > div#contatos > div#local > span {
+    margin: 0px;
+    margin-right: 10px;
+}
+
+footer > div#fim > div#contatos > div#local > p {
+    font-family: 'paragrafo', sans-serif;
     color: white;
 }
 
 footer > p#creditos {
-    margin-top: 3%;
+    margin-top: 50px;
     color: white;
     font-family: 'paragrafo';
     text-align: center;

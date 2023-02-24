@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,89 +11,82 @@
     <script src="js/menu.js"></script>
     <title>Next Level Startup</title>
 </head>
+
 <body>
     <div class="background">
-        <header id="cabecalho">
-            <span id="menu-burguer" class="material-icons" onclick="clickMenu()">menu</span>
-            <div class="logo">
-                <h1>
-                    <span class="logo-1">Next</span>
-                    <br>
-                    <span class="logo-2">Level</span>
-                </h1>
-                <p class="logo-3">STARTUP</p>
-            </div>
-            <menu>
-                <ul>
-                    <li>
-                        <div class="menuheader">
-                            <a href="#comeco">
+        <header>
+            <nav class="nav-bar">
+                <span id="menu-burguer" class="material-icons" onclick="clickMenu()">menu</span>
+                <div class="logo">
+                    <h1>
+                        <span class="logo-span-item1">Next</span>
+                        <br>
+                        <span class="logo-span-item2">Level</span>
+                    </h1>
+                    <p class="logo-p">STARTUP</p>
+                </div>
+                <div class="nav-list">
+                    <ul>
+                        <li class="nav-item">
+                            <a href="/" class="nav-link">
                                 <span class="material-icons">home</span>
-                                <span class="reference">HOME</span>
+                                <span class="nav-item-text">Home</span>
                             </a>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="menuheader">
-                            <a href="#Solucoes">
-                                <span id="Solucoes" class="material-icons">build</span>
-                                <span class="reference">SOLUÇÕES DE MERCADO</span>
+                        </li>
+                        <li class="nav-item">
+                            <a href="/" class="nav-link">
+                                <span class="material-icons">build</span>
+                                <span class="nav-item-text">Soluções de Mercado</span>
                             </a>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="menuheader">
-                            <a href="#ComoFunciona">
-                                <span id="ComoFunciona" class="material-icons">help</span>
-                                <span class="reference">COMO FUNCIONA</span>
+                        </li>
+                        <li class="nav-item">
+                            <a href="/" class="nav-link">
+                                <span class="material-icons">help</span>
+                                <span class="nav-item-text">Como funciona</span>
                             </a>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="menuheader">
-                            <a href="#SobreNos">
-                                <span id="SobreNos" class="material-icons">info</span>
-                                <span class="reference">SOBRÉ NÓS</span>
+                        </li>
+                        <li class="nav-item">
+                            <a href="/" class="nav-link">
+                                <span class="material-icons">info</span>
+                                <span class="nav-item-text">Sobre Nós</span>
                             </a>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="menuheader">
-                            <a href="">
-                                <span id="Contato" class="material-icons">mark_unread_chat_alt</span>
-                                <span class="reference">CONTATO</span>
+                        </li>
+                        <li class="nav-item">
+                            <a href="/" class="nav-link">
+                                <span class="material-icons">mark_unread_chat_alt</span>
+                                <span class="nav-item-text">Contatos</span>
                             </a>
-                        </div>
-                    </li>
-                </ul>
-            </menu>             
+                        </li>
+                    </ul>
+                </div>
+            </nav>
         </header>
         <section id="Home">
-                <aside>
-                    <div class="redes-sociais">
-                        <div id="parte-1">
-                            <h2>Acompanhe nossas<br> Notícias, Tecnologias e<br> Eventos pelo Instagram</h3>
+            <aside>
+                <div class="redes-sociais">
+                    <div id="parte-1">
+                        <h2>Acompanhe nossas<br> Notícias, Tecnologias e<br> Eventos pelo Instagram</h3>
                             <div>
                                 <a href="#">
                                     <span id="icon"></span>
                                     <span id="text">Acesse nosso instagram</span>
                                 </a>
                             </div>
-                        </div>
-                        <div id="parte-2"> 
-                            <picture>
-                                <source media="(max-width: 650px)" srcset="img/tablet-pq.webp" type="image/webp">
-                                <source media="(max-width: 1450px)" srcset="img/tablet-medio.webp" type="image/webp">
-                                <img id="tablet" src="img/tablet.webp" alt="tablet">
-                            </picture>
-                            <picture>
-                                <source media="(max-width: 650px)" srcset="img/celular-pq.webp" type="image/webp">
-                                <source media="(max-width: 1410px)" srcset="img/celular-medio.webp" type="image/webp">
-                                <img id="celular" src="img/celular.webp" alt="celular">
-                            </picture>
-                        </div>
                     </div>
-                </aside>
+                    <div id="parte-2">
+                        <picture>
+                            <source media="(max-width: 650px)" srcset="img/tablet-pq.webp" type="image/webp">
+                            <source media="(max-width: 1450px)" srcset="img/tablet-medio.webp" type="image/webp">
+                            <img id="tablet" src="img/tablet.webp" alt="tablet">
+                        </picture>
+                        <picture>
+                            <source media="(max-width: 650px)" srcset="img/celular-pq.webp" type="image/webp">
+                            <source media="(max-width: 1410px)" srcset="img/celular-medio.webp" type="image/webp">
+                            <img id="celular" src="img/celular.webp" alt="celular">
+                        </picture>
+                    </div>
+                </div>
+            </aside>
         </section>
     </div>
     <main>
@@ -100,34 +94,43 @@
             <article>
                 <h2 id="comeco">Soluções avançadas</h2>
                 <p id="atribuicao">Um líder no ramo!</p>
-                <p>Na <strong><u>Next Level</u></strong>, acreditamos que as nossas soluções logo ganharão destaque no mercado. Apenas começamos, mas já sabemos que cada um dos produtos que criamos demanda competências duramente conquistadas, dedicação e ousadia. Continue lendo para saber sobre a tecnologia por trás do sucesso da nossa Start-up de TI.</p>
-                <p>Como grande referência no ramo, a <strong><u>Next Level</u></strong> está sempre superando limites em termos de impacto positivo do uso de tecnologia no mundo. Temos orgulho das nossas conquistas e adoramos compartilhar o nosso conhecimento com outros membros da nossa comunidade. Nossas novas seções incluem informações sobre nossas últimas conquistas, novidades e análises de negócio.</p>
+                <p>Na <strong><u>Next Level</u></strong>, acreditamos que as nossas soluções logo ganharão destaque no
+                    mercado. Apenas começamos, mas já sabemos que cada um dos produtos que criamos demanda competências
+                    duramente conquistadas, dedicação e ousadia. Continue lendo para saber sobre a tecnologia por trás
+                    do sucesso da nossa Start-up de TI.</p>
+                <p>Como grande referência no ramo, a <strong><u>Next Level</u></strong> está sempre superando limites em
+                    termos de impacto positivo do uso de tecnologia no mundo. Temos orgulho das nossas conquistas e
+                    adoramos compartilhar o nosso conhecimento com outros membros da nossa comunidade. Nossas novas
+                    seções incluem informações sobre nossas últimas conquistas, novidades e análises de negócio.</p>
             </article>
             <aside>
                 <h2>Sempre a frente...</h2>
-                <div id="competencias">
-                    <div id="eficiencia">
-                        <div id="img-premium">
+                <div id="competencias" class="content">
+                    <div id="eficiencia" class="content-div">
+                        <div id="img-premium" class="content-div-icon">
                             <span id="icon-premium" class="material-icons">workspace_premium</span>
                         </div>
-                        <div id="frase-premium">
-                            <p>Trabalhamos sempre com eficiência para o agrado de nossos clientes, lhes oferecendo o que há de melhor no mercado!</p>
+                        <div id="frase-premium" class="content-div-text">
+                            <p>Trabalhamos sempre com eficiência para o agrado de nossos clientes, lhes oferecendo o que
+                                há de melhor no mercado!</p>
                         </div>
                     </div>
-                    <div id="forum-duvidas">
-                        <div id="img-forum">
+                    <div id="forum-duvidas" class="content-div">
+                        <div id="img-forum" class="content-div-icon">
                             <span id="icon-forum" class="material-icons">sms</span>
                         </div>
-                        <div id="frase-forum">
-                            <p>Sempre tentando resolver problemas e dúvidas sobre nossa empresa e produtos, via email,whatzapp e redes sociais!</p>
+                        <div id="frase-forum" class="content-div-text">
+                            <p>Sempre tentando resolver problemas e dúvidas sobre nossa empresa e produtos, via
+                                email,whatzapp e redes sociais!</p>
                         </div>
                     </div>
-                    <div id="seguranca">
-                        <div id="img-seguranca">
+                    <div id="seguranca" class="content-div">
+                        <div id="img-seguranca" class="content-div-icon">
                             <span id="icon-security" class="material-icons">security</span>
                         </div>
-                        <div id="frase-seguranca">
-                            <p>Em nossa empresa, levamos muito a sério a segurança dos usuários! Por isso, evitamos ataques hackers que resultam em roubo de informações!</p>
+                        <div id="frase-seguranca" class="content-div-text">
+                            <p>Em nossa empresa, levamos muito a sério a segurança dos usuários! Por isso, evitamos
+                                ataques hackers que resultam em roubo de informações!</p>
                         </div>
                     </div>
                 </div>
@@ -135,15 +138,23 @@
         </section>
         <section id="ComoFunciona">
             <article>
-                <div class="informacoessite">
+                <div class="info">
                     <div class="img-mobile">
-                        <img id="mobile" src="./img/Next-Level.gif" alt="logo-mobile">
+                        <video id="mobile" src="./img/Next-Level.mp4" type="video/mp4" alt="logo-mobile" autoplay muted
+                            loop>
                     </div>
-                    <div class="informacoes">
+                    <div class="info-text">
                         <h2>O QUE PODEMOS OFERECER...</h2>
-                        <p>Somos uma empresa especilizada em tecnologia de softwares, trabalhando recentemente nas áreas de desenvolvedor mobile e desktop.</p>
-                        <p>Porém como todo grande pensador, temos grandes sonhos... Nosso objetivo não é parar por aqui, queremos crescer 100% na Indústria Mundial de Tecnologia e Comércio. Isso é apenas o começo para uma grande "Nação Next Level"! Ampliremos em breve e passaremos de Empresa Tecnologica para Multinacional Brasileira de Serviços Gerais, pois como se dizia o grande filósofo Heráclito: "Grandes resultados requerem grandes ambições."</p>
-                        <p>Queremos que todos fiquem bem informados dos produtos, eventos e demais assuntos da empresa; por isso estamos sempre postando nas nossas redes sociais, em nosso site e enviando emails aos interessados para que fiquem sabendo das nossas mais novas notícias.</p>
+                        <p>Somos uma empresa especilizada em tecnologia de softwares, trabalhando recentemente nas áreas
+                            de desenvolvedor mobile e desktop.</p>
+                        <p>Porém como todo grande pensador, temos grandes sonhos... Nosso objetivo não é parar por aqui,
+                            queremos crescer 100% na Indústria Mundial de Tecnologia e Comércio. Isso é apenas o começo
+                            para uma grande "Nação Next Level"! Ampliremos em breve e passaremos de Empresa Tecnologica
+                            para Multinacional Brasileira de Serviços Gerais, pois como se dizia o grande filósofo
+                            Heráclito: "Grandes resultados requerem grandes ambições."</p>
+                        <p>Queremos que todos fiquem bem informados dos produtos, eventos e demais assuntos da empresa;
+                            por isso estamos sempre postando nas nossas redes sociais, em nosso site e enviando emails
+                            aos interessados para que fiquem sabendo das nossas mais novas notícias.</p>
                     </div>
                 </div>
             </article>
@@ -151,34 +162,49 @@
         <section id="SobreNos">
             <h2>Você ajudou a construir essa História.</h2>
             <p id="slogan">Evoluindo a cada dia nossa empresa...</p>
-            <p>Nossa empresa não tem objetivo de parar por aqui, mas sim poder crescer a cada dia mais. Acreditamos na capacidade máxima de nossos funcionários e integrantes, que sempre estão dispostos a fazer o melhor para vocês. Juntos podemos fazer uma histórias, por isso pedimos o apoio e torcida de todo o Brasil e de todo mundo.</p>
-            <p>Acreditem, o mais simples apoio e crítica é a inspiração completa para que posssamos continuar evoluindo como empresa e pessoas, pois a partir delas sabemos nossos erros e acertos para o bem comum, como uma verdadeira sociedade faz. Juntos conquitaremos o mundo tenológico e social, por isso peço o apoio de todos. Viva a comunidade Next Level!</p>
+            <p>Nossa empresa não tem objetivo de parar por aqui, mas sim poder crescer a cada dia mais. Acreditamos na
+                capacidade máxima de nossos funcionários e integrantes, que sempre estão dispostos a fazer o melhor para
+                vocês. Juntos podemos fazer uma histórias, por isso pedimos o apoio e torcida de todo o Brasil e de todo
+                mundo.</p>
+            <p>Acreditem, o mais simples apoio e crítica é a inspiração completa para que posssamos continuar evoluindo
+                como empresa e pessoas, pois a partir delas sabemos nossos erros e acertos para o bem comum, como uma
+                verdadeira sociedade faz. Juntos conquitaremos o mundo tenológico e social, por isso peço o apoio de
+                todos. Viva a comunidade Next Level!</p>
         </section>
     </main>
     <footer>
-        <div class="logo">
-            <h1>
-                <span class="logo-1">Next</span>
-                <br>
-                <span class="logo-2">Level</span>
-            </h1>
-            <p class="logo-3">Startup</p>
+        <div id="fim">
+            <div id="logoandslogan">
+                <div class="logo">
+                    <h1>
+                        <span class="logo-span-item1">Next</span>
+                        <br>
+                        <span class="logo-span-item2">Level</span>
+                    </h1>
+                    <p class="logo-p">Startup</p>
+                </div>
+                <p id="slogan-final">Sempre dispostos a oferecer o melhor para juntos criarmos uma grande "Nação Next
+                    Level".</p>
+            </div>
+            <div id="contatos">
+                <p>Informações para Contato:</p>
+                <div id="telefone">
+                    <span class="material-icons">call</span>
+                    <p>(61) 99977-7155</p>
+                </div>
+                <div id="email">
+                    <span class="material-icons">mail</span>
+                    <p>contato@next-level.com</p>
+                </div>
+                <div id="local">
+                    <span class="material-icons">pin_drop</span>
+                    <p>Empresa Virtual - Brasília DF</p>
+                </div>
+            </div>
         </div>
-        <p id="slogan-final">Sempre dispostos a oferecer o melhor para juntos criarmos uma grande "Nação Next Level".</p>
-            <div id="telefone">
-                <span class="material-icons">call</span>
-                <p>(61) 99977-7155</p>
-            </div>
-            <div id="email">
-                <span class="material-icons">mail</span>
-                <p>contato@next-level.com</p>
-            </div>
-            <div id="local">
-                <span class="material-icons">pin_drop</span>
-                <p>Empresa Virtual - Brasília DF</p>
-            </div>
         <p id="creditos">© 2022 por Next Level Startup</p>
     </footer>
     <script src="js/menu.js"></script>
 </body>
+
 </html>

@@ -2,12 +2,16 @@
 
 @media screen and (max-width: 992px) {
 
-.subtitulo {
-    font-family: 'hamster';
-    font-size: 2em;
-    font-weight: normal;
+    body {
+        overflow-y: hidden;
+    }
+
+    .subtitulo {
+        font-family: 'hamster';
+        font-size: 2em;
+        font-weight: normal;
     
-}
+    }
 
     header {
         position: relative;
@@ -17,15 +21,16 @@
 
 
     header.active menu {
-        display: block;
-        background-color: rgba(128, 128, 128, 0.404);
+        display: flex;
         position: absolute;
-        top: 40px;
+        background-color: black;
+        top: 20vh;
         left: 0px;
-        width: 100%;
-        height: 10000px;
-        line-height: 40px;
-        z-index: 100000000;
+        width: 100vw;
+        height: 100vh;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
     }
 
     header.active menu li {
@@ -55,15 +60,11 @@
 
     }
 
-    section#Home >  aside  > div.redes-sociais > div#parte-2 {
+    div#parte-2 {
         display: none;
     }
 
-    section#ComoFunciona > article > div.informacoessite > div.img-mobile {
-        display: none;
-    }
-
-    menu {
+    .img-mobile {
         display: none;
     }
 
@@ -71,14 +72,14 @@
         max-width: 90%;
     }
 
-    section#Home >  aside  > div.redes-sociais > div#parte-1 > h2 {
+    div#parte-1 h2 {
         margin-top: 15px;
         margin: auto;
         text-align: center;
         padding: 10px;
     }
 
-    section#Home >  aside > div.redes-sociais > div#parte-1 > button{
+    div#parte-1 button{
         margin: auto;
         margin-top: 20px;
         position: absolute;
@@ -87,22 +88,22 @@
 
     }
 
-    section#Home > aside > div.redes-sociais > div#parte-2 > picture > img#tablet{
+    img#tablet{
         display: none;
     }
     
-    section#Home > aside > div.redes-sociais > div#parte-2 > picture > img#celular {
+    img#celular {
         display: none;
     }
 
-    section#ComoFunciona > article > div.informacoessite > div.informacoes {
+    .info-text {
         display: block;
         max-width: 100%;
         margin: auto;
         line-height: 2em;
     }
 
-    section#ComoFunciona > article > div.informacoessite > div.informacoes > h2 {
+    .info-text h2 {
         margin: auto;
         margin-bottom: 25px;
         font-family: subtitulo, sans-serif;
@@ -112,127 +113,129 @@
         line-height: 1em;
     }
 
-    section#ComoFunciona > article > div.informacoessite > div.informacoes > p {
-        max-width: 90%;
+    .info-text p {
         margin: auto;
+        max-width: 90%;
         font-family: paragrafo, sans-serif;
         font-weight: bold;
-        letter-spacing: normal;
+        font-size: 1.1em;
         text-align: justify;
         text-indent: 30px;
-        font-size: 1.1em;
     }
 
-    section#Solucoes > aside > div#competencias {
+    .content {
         display: block;
         margin: auto;
         width: 90%;
     }
 
-    section#Solucoes > aside > div#competencias > div#eficiencia > div#frase-premium {
-        max-width: 350px;
+    .content-div-text {
         border: 2px solid grey;
         padding: 5px;
     }
 
-    section#Solucoes > aside > div#competencias > div#eficiencia > div#frase-premium > p {
+    div#frase-premium > p {
+        margin-bottom: 0px;
         text-align: justify;
     }
 
-    section#Solucoes > aside > div#competencias > div#forum-duvidas > div#frase-forum {
-        max-width: 350px;
-        border: 2px solid grey;
-        padding: 5px;
-    }
-
-    section#Solucoes > aside > div#competencias > div#forum-duvidas > div#frase-forum > p {
+    div#frase-forum > p {
+        margin-bottom: 0px;
         text-align: justify;
     }
 
-    section#Solucoes > aside > div#competencias > div#seguranca > div#frase-seguranca {
-        max-width: 350px;
-        border: 2px solid grey;
-        padding: 5px;
-    }
-
-    section#Solucoes > aside > div#competencias > div#seguranca > div#frase-seguranca > p {
+    div#frase-seguranca > p {
+        margin-bottom: 0px;
         text-align: justify;
     }
+
+    p#slogan {
+        max-width: none;
+        text-indent: 0px;
+    }
+
+    section#SobreNos p {
+        max-width: 90%;
+        margin: auto;
+    }
+
 
     footer {
-        max-width: 100%;
         background-color: var(--color08);
         padding-top: 20px;
-        padding-left: 0px;
-        margin-right: 0px;
-        padding-bottom: 20px;
+        padding-bottom: 10px;
     }
 
-    footer > div.logo {
-        margin: 0px;
-        margin-bottom: 25px;
-        padding: 0px;
-        max-width: 100%;
+    footer > div#fim {
+        display: block;
     }
 
-    footer > p#slogan-final {
-        max-width: 250px;
+    footer > div#fim > div#logoandslogan {
+        display: block;
+        max-width: none;
+    }
+
+    footer > div#fim > div#logoandslogan > div#slogan-final {
         margin: auto;
-        margin-bottom: 30px;
-        font-family: paragrafo, sans-serif;
-        color: white;
-        text-align: center;
     }
 
-    footer > div#telefone {
+    footer > div#fim > div#contatos {
+        max-width: none;
+    }
+
+    footer > div#fim > div#contatos > p {
+        display: none;
+    }
+
+    footer > div#fim > div#contatos > div#telefone {
+        display: flex;
+        margin: auto;
+        margin-top: 30px;
+        margin-bottom: 15px;
+        justify-content: center;
+    }
+
+    footer > div#fim > div#contatos > div#telefone > span {
+        margin: 0px;
+        margin-right: 10px;
+    }
+
+    footer > div#fim > div#contatos > div#telefone > p {
+        font-family: 'paragrafo', sans-serif;
+        color: white;
+        letter-spacing: 0.1em;
+    }
+
+    footer > div#fim > div#contatos > div#email {
         display: flex;
         margin: auto;
         margin-bottom: 15px;
         justify-content: center;
     }
 
-    footer > div#telefone > span {
+    footer > div#fim > div#contatos > div#email > span {
         margin: 0px;
         margin-right: 10px;
     }
 
-    footer > div#telefone > p {
+    footer > div#fim > div#contatos > div#email > p {
         font-family: 'paragrafo', sans-serif;
         color: white;
         letter-spacing: 0.1em;
     }
 
-    footer > div#email {
+    footer > div#fim > div#contatos > div#local {
         display: flex;
         margin: auto;
-        margin-bottom: 15px;
         justify-content: center;
     }
 
-    footer > div#email > span {
+    footer > div#fim > div#contatos > div#local > span {
         margin: 0px;
         margin-right: 10px;
     }
 
-    footer > div#email > p {
-        font-family: 'paragrafo', sans-serif;
-        color: white;
-        letter-spacing: 0.1em;
-    }
-
-    footer > div#local {
-        display: flex;
-        margin: auto;
-        margin-bottom: 45px;
-        justify-content: center;
-    }
-
-    footer > div#local > span {
-        margin: 0px;
-        margin-right: 10px;
-    }
-
-    footer > div#local > p {
+    footer > div#fim > div#contatos > div#local > p {
         font-family: 'paragrafo', sans-serif;
         color: white;
     }

@@ -1,4 +1,4 @@
-const MenuMobile = document.getElementById('menu-hamburguer')
+const MenuMobile = document.getElementById('menu-burguer')
 
 function clickMenu() {
     const header = document.getElementById('cabecalho')
