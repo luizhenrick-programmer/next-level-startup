@@ -76,7 +76,7 @@ header {
     margin: auto;
 }
 
-span#menu-burguer {
+button#menu-burguer {
     display: none;
 }
 
@@ -117,8 +117,8 @@ span#menu-burguer {
     align-items: center;
 }
 
-.nav-list ul {
-    margin-top: -30px;
+.nav-list-ul {
+    margin-top: 30px;
     display: flex;
     justify-content: center;
     list-style: none;
@@ -156,10 +156,6 @@ span#menu-burguer {
     color: black;
     font-weight: bolder;
     text-decoration: none;
-}
-
-.mobile-menu {
-    display: none;
 }
 
 section {

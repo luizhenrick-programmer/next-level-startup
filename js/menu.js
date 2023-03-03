@@ -1,12 +1,20 @@
-const MenuMobile = document.getElementById('menu-burguer')
+var menuButton = document.getElementById('menu-burguer');
+var menuBarMobile = document.querySelector('.nav-list');
+var menuBarMobileUL = document.querySelector('.nav-list-ul');
 
-function clickMenu() {
-    let MenuBarMobile = document.querySelector('.mobile-menu');
-    if (MenuBarMobile.classList.contains('open')) {
-        MenuBarMobile.classList.remove('open')
-    } else {
-        MenuBarMobile.classList.add('open')
-    }
+function MenuShow() {
+  if (menuButton.classList.contains('show')) {
+    menuButton.classList.remove('show');
+    menuButton.innerText = 'menu';
+    menuBarMobile.style.display = 'none';
+    menuBarMobileUL.classList.remove('animation');
+    
+  } else {
+    menuButton.classList.add('show')
+    menuButton.innerText = 'cancel';
+    menuBarMobile.style.display = 'block';
+    menuBarMobileUL.classList.add('animation');
+  }
 }
 
-MenuMobile.addEventListener('click', clickMenu)
+menuButton.addEventListener('click', MenuShow)
