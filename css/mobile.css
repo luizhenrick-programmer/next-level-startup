@@ -15,6 +15,10 @@
         justify-content: center;
     }
 
+    .logo {
+        margin: auto;
+    }
+
     button#menu-burguer {
         position: absolute;
         top: 10px;
@@ -22,17 +26,19 @@
         display: block;
         background-color: black;
         color: white;
-        font-size: 30px;
+        font-size: 26px;
+        transition: background-color 1.2s ease;
+    }
+
+    button#menu-burguer:hover {
         cursor: pointer;
+        background-color: white;
+        color: black;
     }
     
-    .logo {
-        margin: auto;
-    }
 
     .nav-list {
         display: none;
-        transition: height 0.5s ease-in-out;
     }
 
     
@@ -48,7 +54,7 @@
         align-items: center;
         justify-content: space-around;
         overflow: hidden;
-        transition: all 3s ease;
+        transition: height 3s ease-in-out;
     }
 
     .nav-list-ul.animation {

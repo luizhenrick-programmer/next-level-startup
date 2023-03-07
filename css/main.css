@@ -113,7 +113,6 @@ button#menu-burguer {
 }
 
 .nav-list {
-    display: flex;
     align-items: center;
 }
 
