@@ -17,4 +17,4 @@ function MenuShow() {
   }
 }
 
-menuButton.addEventListener('click', MenuShow)
+menuButton.addEventListener('click', MenuShow())
