@@ -3,32 +3,32 @@
 
 @font-face {
     font-family: 'Subtitulo';
-    src: url(../fonts/Ailerons-Typeface.otf) format("opentype");
+    src: url(fonts/Ailerons-Typeface.otf) format("opentype");
 }
 
 @font-face {
     font-family: 'titulo';
-    src: url(../fonts/FuturaLT-Book.ttf) format("truetype");
+    src: url(fonts/FuturaLT-Book.ttf) format("truetype");
 }
 
 @font-face {
     font-family: 'paragrafo';
-    src: url(../fonts/FuturaLT-Light.ttf) format("truetype");
+    src: url(fonts/FuturaLT-Light.ttf) format("truetype");
 }
 
 @font-face {
     font-family: 'hamster';
-    src: url(../fonts/Hamster.otf) format("opentype");
+    src: url(fonts/Hamster.otf) format("opentype");
 }
 
 @font-face {
     font-family: 'oranienbaum';
-    src: url(../fonts/Oranienbaum.ttf) format("truetype");
+    src: url(fonts/Oranienbaum.ttf) format("truetype");
 }
 
 @font-face {
     font-family: 'streamster';
-    src: url(../fonts/Streamster.ttf) format("truetype");
+    src: url(fonts/Streamster.ttf) format("truetype");
 }
 
 :root {
@@ -67,7 +67,7 @@ body, html {
 }
 
 div.background {
-    background: black url(../img/background.jpg) no-repeat fixed;
+    background: black url(img/background.jpg) no-repeat fixed;
     background-size: cover;
     background-position: center center;
 }
@@ -191,7 +191,7 @@ div#parte-1 a {
 
 span#icon {
     background-color: transparent;
-    background-image: url(../img/instagram.png);
+    background-image: url(img/instagram.png);
     background-position: center center;
     background-repeat: no-repeat;
     background-attachment: scroll;

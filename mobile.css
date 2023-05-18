@@ -58,7 +58,9 @@
     }
 
     .nav-list-ul.animation {
-        height: 80vh;
+        height: 73vh;
+        padding-top:10px;
+        padding-bottom: 10px;
     }
 
     section {
