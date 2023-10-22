@@ -16,51 +16,54 @@
     }
 
     .logo {
-        margin: auto;
+        
     }
 
+
     button#menu-burguer {
-        position: absolute;
+        position: fixed;
         top: 10px;
         left: 10px;
         display: block;
         background-color: black;
         color: white;
         font-size: 26px;
-        transition: background-color 1.2s ease;
+        border: 0px;
+        margin: 0px;
     }
 
     button#menu-burguer:hover {
         cursor: pointer;
-        background-color: white;
-        color: black;
     }
     
-
-    .nav-list {
-        display: none;
+    .nav-bar {
+        display: block;
+        position: fixed;
+        top: 0px;
+        height: 100%;
+        background-color: black;
+        width: 100%;
+        align-items: center;
+        justify-content: space-between;
+        margin: 0px;
+        border: 0px;
+        padding: 0px;
     }
+
+    
 
     
     .nav-list-ul {
         display: flex;
         flex-direction: column;
         position: fixed;
-        top: 8rem;
         left: 0;
         width: 100%;
-        height: 0vh;
+        height: 85vh;
         background-color: black;
         align-items: center;
-        justify-content: space-around;
-        overflow: hidden;
-        transition: height 3s ease-in-out;
-    }
-
-    .nav-list-ul.animation {
-        height: 73vh;
-        padding-top:10px;
-        padding-bottom: 10px;
+        justify-content: space-between;
+        
     }
 
     section {

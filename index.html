@@ -33,25 +33,25 @@
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="/" class="nav-link">
+                            <a href="#Solucoes" class="nav-link">
                                 <span class="material-icons">build</span>
                                 <span class="nav-item-text">Soluções de Mercado</span>
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="/" class="nav-link">
+                            <a href="#ComoFunciona" class="nav-link">
                                 <span class="material-icons">help</span>
                                 <span class="nav-item-text">Como funciona</span>
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="/" class="nav-link">
+                            <a href="#SobreNos" class="nav-link">
                                 <span class="material-icons">info</span>
                                 <span class="nav-item-text">Sobre Nós</span>
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="/" class="nav-link">
+                            <a href="#fim" class="nav-link">
                                 <span class="material-icons">mark_unread_chat_alt</span>
                                 <span class="nav-item-text">Contatos</span>
                             </a>
@@ -91,6 +91,7 @@
     <main>
         <section id="Solucoes">
             <article>
+                <a id="Solucoes"></a>
                 <h2 id="comeco">Soluções avançadas</h2>
                 <p id="atribuicao">Um líder no ramo!</p>
                 <p>Na <strong><u>Next Level</u></strong>, acreditamos que as nossas soluções logo ganharão destaque no
@@ -204,6 +205,22 @@
         <p id="creditos">© 2022 por Next Level Startup</p>
     </footer>
     <script src="script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("nav a").on('click', function (event) {
+                if (this.hash !== "") {
+                    event.preventDefault();
+                    var hash = this.hash;
+                    $('html, body').animate({
+                        scrollTop: $(hash).offset().top
+                    }, 800, function () {
+                        window.location.hash = hash;
+                    });
+                }
+            });
+        });
+    </script>
 </body>
 
 </html>
